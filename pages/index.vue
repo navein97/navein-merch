@@ -1,24 +1,110 @@
 <template>
-  <div>
-    <h2>Home</h2>
+  <div class="home-content">
+    <h2>Express Yourself with Unique Styles at Merch Mania</h2>
     <p>
-      Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      Lorem Ipsum has been the industry's standard dummy text ever since the
-      1500s, when an software like Aldus PageMaker including versions of Lorem
-      Ipsum.
+      Unleash your individuality with our incredible collection of streetwear
+      and accessories! From bold graphic tees to comfy hoodies, statement
+      jewelry to eye-catching bags, we've got everything you need to curate a
+      look that speaks your truth. Explore our curated collection and find
+      pieces that express your unique vibe.
     </p>
+
+    <section class="features">
+      <img
+        src="https://cdn.solar-guitars.com/wp-content/uploads/2019/09/Merch-banner-v2.jpeg"
+        alt="Home image"
+      />
+      <ul>
+        <li>
+          Exclusive Designs: Stand out from the crowd with one-of-a-kind pieces
+          you won't find anywhere else.
+        </li>
+        <li>
+          Premium Quality: Our merch is crafted with top-notch materials and
+          attention to detail, ensuring comfort and durability.
+        </li>
+        <li>
+          Endless Variety: Explore our wide range of styles, colors, and designs
+          to match any mood or occasion.
+        </li>
+        <li>
+          Express Yourself: Whether you're a streetwear aficionado, a pop
+          culture fanatic, or a self-proclaimed fashion rebel, we have the
+          perfect pieces to help you showcase your personality.
+        </li>
+      </ul>
+    </section>
+
+    <section class="cta">
+      <h3>Ready to Unleash Your Style?</h3>
+      <button>Shop Now</button>
+    </section>
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+// No specific setup logic needed for this content
+</script>
 
 <style scoped>
-h2 {
-  margin-bottom: 20px;
-  font-size: 36px;
+/* Base styles for a visually appealing layout */
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #fff; /* Light background for a clean look */
+  color: #333; /* Darker text for readability */
 }
 
-p {
-  margin: 20px 0;
+/* Home content styles */
+.home-content {
+  text-align: center; /* Centered for visual impact */
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.home-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  text-transform: uppercase; /* Bolder heading */
+}
+
+.home-content p {
+  margin-bottom: 30px;
+}
+
+/* Features section styles */
+.features {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Arrange elements vertically */
+  align-items: center; /* Center elements horizontally */
+  margin-bottom: 40px;
+}
+
+.features img {
+  width: 100%; /* Full width */
+  margin-bottom: 20px; /* Spacing below image */
+}
+
+.features ul {
+  text-align: left; /* Align feature list to the left */
+}
+
+/* CTA section styles */
+.cta {
+  text-align: center;
+}
+
+.cta h3 {
+  margin-bottom: 15px;
+}
+
+.cta button {
+  padding: 10px 20px;
+  background-color: #e53935; /* Red for a bold, attention-grabbing look */
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 </style>
