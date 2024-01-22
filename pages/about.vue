@@ -6,10 +6,14 @@
       <div class="section section-about">
         <h2 class="section-title">Our Story</h2>
         <p>{{ aboutText }}</p>
+        <p>{{ aboutText }}</p>
       </div>
 
       <div class="section section-team">
         <h2 class="section-title">The Creative Minds Behind Our Merch</h2>
+        <p>{{ aboutText }}</p>
+        <p>{{ aboutText }}</p>
+
         <ul class="team-list">
           <li v-for="member in teamMembers" :key="member.id">
             <img
@@ -27,6 +31,7 @@
 
       <div class="section section-contact">
         <h2 class="section-title">Get in Touch About Our Merch</h2>
+        <p>{{ aboutText }}</p>
         <p>Questions about our designs or sizing? We're happy to help!</p>
         <ul class="contact-list">
           <li>
@@ -60,6 +65,12 @@ const teamMembers = ref([
     role: "Designer",
     image:
       "https://www.losingcontrol.org/wp-content/uploads/2017/05/speaker-1.jpg",
+  },
+  {
+    id: 3,
+    name: "John Doe",
+    role: "Developer",
+    image: "https://franchisematch.com/wp-content/uploads/2015/02/john-doe.jpg",
   },
   // ... more team members
 ]);
