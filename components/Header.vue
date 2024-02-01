@@ -6,10 +6,10 @@
     <v-spacer></v-spacer>
     <v-btn @click="$router.push('/Cart')" class="text-none" stacked>
       <v-badge :content="cartStore.productsTotal" color="error">
-        <button>
-          <i class="material-icons mr-2">add_shopping_cart</i>
-        </button>
-      </v-badge>
+          <button class="flex">
+            <i class="material-icons mr-2">add_shopping_cart</i>
+          </button>      
+        </v-badge>
     </v-btn>
     <v-btn
       :prepend-icon="

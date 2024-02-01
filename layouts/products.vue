@@ -15,14 +15,10 @@
         <li><NuxtLink to="/about" class="btn2">About </NuxtLink></li>
         <li><NuxtLink to="/products" class="btn2">Products </NuxtLink></li>
       </ul>
-      <ul>
-        <button class="btn3 flex">
-          <i class="material-icons mr-2">add_shopping_cart</i>
-        </button>
-      </ul>
     </footer>
     <div class="container mx-auto p-4">
-      <slot />
+      <slot /> 
+      <!-- this slow is very important, without this, your whole home page or product page takde -->
     </div>
   </div>
 </template>
@@ -42,3 +38,4 @@
   font-weight: bold;
 }
 </style>
+
