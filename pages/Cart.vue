@@ -22,7 +22,7 @@
                   <div
                     class="d-flex justify-space-between align-center no-wrap w-full h-100"
                   >
-                    <div class="d-flex align-center bg-primary rounded">
+                    <div class="d-flex align-center btn rounded">
                       <span
                         class="icon d-flex align-center pa-3"
                         style="cursor: pointer"
@@ -57,7 +57,7 @@
             </div>
           </v-card-text>
           <v-card-text class="text-center" v-else>
-            <v-btn class="mx-auto" @click="$router.push('/')" color="primary">
+            <v-btn class="mx-auto" @click="$router.push('/')" color="btn">
               Your cart is empty. Fill it
             </v-btn>
           </v-card-text>
@@ -69,22 +69,22 @@
           <v-card-text>
             <div class="d-flex align-center justify-space-between mb-4">
               <p class="ma-0">Subtotal</p>
-              <p class="text-primary">${{ cartStore.total }}</p>
+              <p class="btn">${{ cartStore.total }}</p>
             </div>
             <div class="d-flex align-center justify-space-between mb-4">
               <p class="ma-0">Tax</p>
-              <p class="text-primary">0</p>
+              <p class="btn">0</p>
             </div>
             <div class="d-flex align-center justify-space-between mb-4">
               <p class="ma-0">Shipping Price</p>
-              <p class="text-primary">0</p>
+              <p class="btn">0</p>
             </div>
             <v-divider></v-divider>
             <div class="py-3 d-flex align-center justify-space-between mb-4">
               <p class="ma-0">Order Total</p>
-              <p class="text-primary">${{ cartStore.total }}</p>
+              <p class="btn">${{ cartStore.total }}</p>
             </div>
-            <v-btn color="primary" block> Checkout </v-btn>
+            <v-btn color="btn" block> Checkout </v-btn>
           </v-card-text>
         </v-card>
       </v-col>
